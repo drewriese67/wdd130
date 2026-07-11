@@ -2,7 +2,7 @@ main {
     max-width: 840px;
 }
 
-nav a {
+nav {
     color: steelblue;
     padding: 10px;
     display: block;
