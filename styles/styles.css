@@ -9,6 +9,11 @@ nav {
     display: block;
 }
 
+nav a {
+    color: steelblue;
+    padding: 10px;
+}
+    
 h1 {
     color: steelblue;
 }
