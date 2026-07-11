@@ -3,7 +3,8 @@ main {
 }
 
 nav {
-    color: steelblue;
+    color: white;
+    background-color: steelblue;
     padding: 10px;
     display: block;
 }
