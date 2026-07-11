@@ -12,6 +12,8 @@ nav {
 nav a {
     color: steelblue;
     padding: 10px;
+    display: block;
+    background-color: steelblue;
 }
     
 h1 {
