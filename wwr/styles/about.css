@@ -1,0 +1,175 @@
+
+/* ==========================================================================
+   1. GLOBAL & LAYOUT SETUP
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 15px; /* Creates the standard wireframe spacing between sections */
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+/* ==========================================================================
+   2. HEADER (NAVIGATION BAR)
+   ========================================================================== */
+header {
+  background-color: #e3d7ff; /* Light purple color matching the wireframe */
+  border: 1px solid #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: #cccccc;
+  border: 1px solid #999999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+nav a {
+  color: #0000ee;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   3. HERO SECTION (WITH IMAGE UNDERNEATH TEXT)
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  border: 1px solid #000000;
+  min-height: 250px;
+  padding: 30px;
+  
+  /* Layout alignment for internal text elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* CRITICAL BACKGROUND RESIZING PROPERTIES */
+  background-image: url('your-hero-image.jpg'); /* Replace with your image file path */
+  background-size: cover;      /* Forces image to scale and completely fill the container width/height */
+  background-position: center;  /* Centers the image to prevent awkward cropping on small screens */
+  background-repeat: no-repeat; /* Prevents the image from tiling or duplicating */
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.hero-content-box {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border: 1px solid #000000;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Dummy grey lines inside the text block */
+.hero-text-lines {
+  flex-grow: 1;
+  background: repeating-linear-gradient(
+    to bottom,
+    #b0b0b0,
+    #b0b0b0 8px,
+    transparent 8px,
+    transparent 18px
+  );
+  height: 60px;
+}
+
+.hero-side-thumb {
+  width: 80px;
+  height: 80px;
+  background-color: #cce6ff;
+  border: 1px solid #999999;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   4. CONTENT SECTIONS (HISTORY & ADVENTURE)
+   ========================================================================== */
+.content-block {
+  background-color: #f0f0f0;
+  border: 1px solid #000000;
+  padding: 25px;
+  text-align: center;
+}
+
+.content-block h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.history-text-lines {
+  background: repeating-linear-gradient(
+    to bottom,
+    #b0b0b0,
+    #b0b0b0 8px,
+    transparent 8px,
+    transparent 18px
+  );
+  height: 60px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   5. FOOTER (SOCIAL BAR)
+   ========================================================================== */
+footer {
+  background-color: #e3d7ff; /* Purple matching the header */
+  border: 1px solid #000000;
+  padding: 15px 20px;
+  margin-top: auto; /* Guarantees footer pushes down to viewport bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #000000;
+}
+
+.social-links-box {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon-placeholder {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  /* Simple CSS cross alignment mimicking the icon boxes */
+  background: linear-gradient(to top right, transparent 48%, #000 48%, #000 52%, transparent 52%),
+              linear-gradient(to top left, transparent 48%, #000 48%, #000 52%, transparent 52%);
+}
