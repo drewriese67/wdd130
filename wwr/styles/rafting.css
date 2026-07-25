@@ -55,116 +55,76 @@ nav a {
     border-radius: 4px;
 }
 
-.hero {
-    position: absolute;
-}
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Rafting Logo" width="200">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-.hero h1,
-.hero article {
-    position: absolute;
-    left: 30px;
-    right: 30px;
-}
+    <main>
+        <div class="hero">
+            <img src="images/heroimage.avif" alt="Rafting Adventure">
+            <h1>White Water Rafting</h1>
+            <article>
+                <img src="images/heroimage.avif" alt="Rafting Adventure">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.</p>
+            </article>
+        </div>
 
-.hero h1 {
-    top: 20px;
-    margin: 0;
-    font-size: 2.5rem;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.88);
-    padding: 10px 15px;
-    border: 1px solid #333;
-}
+        <section>
+            <h2>History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+        </section>
 
-.hero article {
-    bottom: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border: 1px solid #333;
-}
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/gallery1.avif" alt="Adventure 1">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery2.avif" alt="Adventure 2">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery3.avif" alt="Adventure 3">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery4.avif" alt="Adventure 4">
+                    <figcaption>Caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery5.avif" alt="Adventure 5">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 
-.hero article img {
-    float: right;
-    width: 180px;
-    margin: 0 0 10px 20px;
-    display: block;
-}
-
-.hero-section,
-.history-section,
-.adventure-section {
-    background-color: #fff;
-    border: 2px solid #333;
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: center;
-    margin-top: 0;
-}
-
-.hero-section h1 {
-    font-size: 2.5rem;
-}
-
-.hero-banner {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    align-items: center;
-    border: 1px solid #333;
-    padding: 15px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-.hero h1,
-.hero article {
-    position: absolute;
-    left: 30px;
-    right: 30px;
-}
-
-.hero h1 {
-    top: 20px;
-    margin: 0;
-    font-size: 2.5rem;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.88);
-    padding: 10px 15px;
-    border: 1px solid #333;
-}
-
-.hero article {
-    bottom: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border: 1px solid #333;
-}
-
-.hero article img {
-    float: right;
-    width: 180px;
-    margin: 0 0 10px 20px;
-    display: block;
-}
-
-.hero article::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.hero-banner img {
-    width: 100%;
-    display: block;
-}
-
+    <footer>
+        <p>Footer Content including Social Media Icons/Links</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
