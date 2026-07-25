@@ -1,54 +1,76 @@
-/* Base Page Setup */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #d1c4e9;
+    color: #222;
 }
 
 main {
     max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Header Component */
 header {
     background-color: #d1c4e9;
-    /* Light purple tint from wireframe */
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 20px 40px;
     border-bottom: 2px solid #333;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    max-height: 60px;
+    max-height: 80px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
-    margin-left: 10px;
     background-color: #fff;
     border: 1px solid #333;
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    border-radius: 4px;
 }
 
-/* Hero Component Layout */
-.hero-section {
+.hero-section,
+.history-section,
+.adventure-section {
+    background-color: #fff;
     border: 2px solid #333;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
+}
+
+.hero-section h1,
+.history-section h2,
+.adventure-section h2 {
+    text-align: center;
+    margin-top: 0;
 }
 
 .hero-section h1 {
-    text-align: center;
     font-size: 2.5rem;
-    margin-top: 0;
 }
 
 .hero-banner {
@@ -60,17 +82,9 @@ nav a {
     padding: 15px;
 }
 
-/* History Grid Component */
-.history-section {
-    border: 2px solid #333;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.history-section h2 {
-    text-align: center;
-    font-size: 2rem;
+.hero-banner img {
+    width: 100%;
+    display: block;
 }
 
 .history-grid {
@@ -78,32 +92,20 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
+    margin-top: 20px;
 }
 
 .history-image img {
     width: 100%;
-    background-color: #5c6bc0;
-    /* Darker blue/purple container accent */
     display: block;
-}
-
-/* Adventure 5-Column Gallery Component */
-.adventure-section {
-    border: 2px solid #333;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.adventure-section h2 {
-    text-align: center;
-    font-size: 2rem;
+    background-color: #5c6bc0;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+    margin-top: 20px;
 }
 
 .gallery-item {
@@ -112,8 +114,8 @@ nav a {
 
 .gallery-item img {
     width: 100%;
-    background-color: #e0e0e0;
     display: block;
+    background-color: #e0e0e0;
 }
 
 .caption {
@@ -121,7 +123,6 @@ nav a {
     font-size: 0.9rem;
 }
 
-/* Footer Component */
 footer {
     background-color: #d1c4e9;
     display: flex;
@@ -131,12 +132,20 @@ footer {
     border-top: 2px solid #333;
 }
 
-.social-links a {
-    margin-left: 10px;
-    display: inline-block;
+footer p {
+    margin: 0;
 }
 
-.social-links img {
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    display: inline-flex;
+}
+
+.socialmedia img {
     width: 30px;
     height: 30px;
     border: 1px solid #333;
