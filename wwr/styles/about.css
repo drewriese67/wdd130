@@ -16,7 +16,7 @@ main {
 header {
     background-color: #d1c4e9;
     /* Light purple tint from wireframe */
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
@@ -34,6 +34,7 @@ nav a {
     margin-left: 10px;
     background-color: #fff;
     border: 1px solid #333;
+    display: flex;
 }
 
 /* Hero Component Layout */
