@@ -84,6 +84,52 @@ nav a {
     padding: 15px;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1,
+.hero article {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+}
+
+.hero h1 {
+    top: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 10px 15px;
+    border: 1px solid #333;
+}
+
+.hero article {
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.hero article img {
+    float: right;
+    width: 180px;
+    margin: 0 0 10px 20px;
+    display: block;
+}
+
+.hero article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .hero-banner img {
     width: 100%;
     display: block;
