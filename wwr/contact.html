@@ -17,7 +17,7 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
@@ -35,7 +35,7 @@
             <div class="map-card">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.717340510354!2d-122.08424968469269!3d37.42206597982506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b8240fcc17%3A0x4b0e9c15f5c2e17b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  allowfullscreen loading="lazy"></iframe>
             </div>
         </section>
 
@@ -53,20 +53,22 @@
                     </div>
                     <fieldset class="radio-group">
                         <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" value="general" checked> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        <label for="purpose-general"><input id="purpose-general" type="radio"
+                              name="purpose" value="general" checked> General Inquiry</label>
+                        <label for="purpose-reservation"><input id="purpose-reservation"
+                              type="radio" name="purpose" value="reservation"> Reservation
                             Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
+                        <label for="purpose-suggestion"><input id="purpose-suggestion" type="radio"
+                              name="purpose" value="suggestion"> Website Suggestion</label>
                     </fieldset>
                     <div class="field-group full-width">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="6"
                           placeholder="Type here"></textarea>
                     </div>
-                    <label class="checkbox-label"><input type="checkbox" name="newsletter"> Please
-                        Subscribe me to the monthly newsletter</label>
+                    <label class="checkbox-label" for="newsletter"><input id="newsletter"
+                          type="checkbox" name="newsletter"> Please Subscribe me to the monthly
+                        newsletter</label>
                     <button type="submit">Get in Touch!</button>
                 </form>
             </div>
@@ -92,7 +94,7 @@
     </main>
 
     <footer>
-        <p>Footer Content including Social Media Icons/Links</p>
+        <p>© 2026 White Water Rafting Company | Student: Andrew Swann Riese</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon">
