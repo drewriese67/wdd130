@@ -100,7 +100,7 @@ main {
     font-weight: 500;
 }
 
-..checkbox-label {
+.checkbox-label {
     display: block;
     margin-bottom: 20px;
     font-weight: 500;
