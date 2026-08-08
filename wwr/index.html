@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>White Water Rafting — Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+    <header class="site-header overlay-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="WWR logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting on a white water river" class="hero-img" />
+            <div class="hero-overlay hero-center">
+                <h2 class="hero-heading">Have An Adventure</h2>
+                <p class="hero-sub">Make Memories with WWR</p>
+                <a class="btn cta-btn" href="trips.html">Book Now</a>
+            </div>
+        </section>
+
+        <section class="features container" aria-labelledby="features-heading">
+            <h3 id="features-heading" class="sr-only">What We Offer</h3>
+
+            <div class="feature-row">
+                <figure class="feature">
+                    <img src="images/feature-rivers.jpg" alt="Rivers" />
+                    <figcaption>
+                        <span class="feature-icon">🌲</span>
+                        <span class="feature-label">Rivers</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="feature">
+                    <img src="images/feature-camping.jpg" alt="Camping" />
+                    <figcaption>
+                        <span class="feature-icon">🔥</span>
+                        <span class="feature-label">Camping</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="feature">
+                    <img src="images/feature-rapids.jpg" alt="Rapids" />
+                    <figcaption>
+                        <span class="feature-icon">🛶</span>
+                        <span class="feature-label">Rapids</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="promo container" aria-labelledby="promo-heading">
+            <div class="promo-inner">
+                <div class="promo-image-wrap">
+                    <img src="images/promo-landscape.jpg" alt="Great outdoors"
+                      class="promo-image" />
+                </div>
+                <aside class="promo-card" id="promo-heading">
+                    <h3>More Than Just The Thrill</h3>
+                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high
+                        peaks; it's way more than just the rapids.</p>
+                    <a class="btn" href="about.html">Join Us</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer footer-tan">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">
+                <p class="copyright">Dry Oar © <span id="year"></span> - Your First and Last Name
+                    Here</p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook" class="social-btn">f</a>
+                    <a href="#" aria-label="Twitter" class="social-btn">t</a>
+                    <a href="#" aria-label="Instagram" class="social-btn">i</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // small helper: set copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
